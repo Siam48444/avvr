@@ -47,26 +47,20 @@ header {
         & span {
             font-weight: 300;
         }
-
-        .playfair_display_font_ {
-            font-family: var(--Playfair-Display);
-            font-style: italic;
-        }
     }
     
     .navigation {
-        /* border: solid red 1px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 2em;
+        gap: 3em;
         font-family: var(--Roboto);
 
         & a {
             text-decoration: none;
             color: var(--color-white);
             font-weight: 500;
-            font-size: clamp(0.85rem, 1.3vw ,1rem); 
+            font-size: clamp(0.85rem, 1.3vw, 1rem); 
             position: relative;
 
             &::after {
@@ -90,4 +84,9 @@ header {
             }
         }
     }
+}
+
+.playfair_display_font {
+    font-family: var(--Playfair-Display);
+    font-style: italic;
 }
