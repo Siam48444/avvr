@@ -90,3 +90,11 @@ header {
     font-family: var(--Playfair-Display);
     font-style: italic;
 }
+
+.top_heading {
+    /* border: red solid 1px; */
+    font-family: var(--Roboto);
+    color: var(--color-white);
+    padding-block: clamp(3.3em, 9vh, 6em);
+    padding-inline: clamp(0.8em, 11vw, 9em);
+}
