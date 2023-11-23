@@ -20,7 +20,7 @@ body {
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
-    --color-green-dark: rgba(4, 25, 20, 1);
+    --color-green-dark: rgba(5, 32, 26, 1);
 
     /* Font Family */
     --Roboto: 'Roboto', sans-serif;
@@ -34,6 +34,17 @@ header {
     background-color: var(--color-green-dark);
 
     .logo {
-        
+        color: var(--color-white);
+        font-family: var(--Roboto);
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 100%;
+
+        .playfair_display_font_ {
+            font-family: var(--Playfair-Display);
+            font-weight: 300;
+            font-style: italic;
+        }
     }
 }
