@@ -41,9 +41,12 @@ header {
         font-weight: 600;
         line-height: 100%;
 
+        & span {
+            font-weight: 300;
+        }
+
         .playfair_display_font_ {
             font-family: var(--Playfair-Display);
-            font-weight: 300;
             font-style: italic;
         }
     }
