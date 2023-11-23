@@ -8,8 +8,9 @@
 
 body {
     box-sizing: border-box;
-    overflow: hidden scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
     margin: 0;
     padding: 0;
 }
@@ -24,4 +25,10 @@ body {
     /* Font Family */
     --Roboto: 'Roboto', sans-serif;
     --Playfair-Display: 'Playfair Display', serif;
+}
+
+header {
+    border: solid red 1px;
+    width: 100vw;
+    padding: clamp(1em, 3vh, 2em) clamp(1.5em, 5vw, 2.5em);
 }
