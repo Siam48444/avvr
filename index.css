@@ -13,6 +13,7 @@ body {
     scrollbar-gutter: stable;
     margin: 0;
     padding: 0;
+    background-color: var(--color-green-dark);
 }
 
 :root {
@@ -20,7 +21,7 @@ body {
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
-    --color-green-dark: rgba(5, 32, 26, 1);
+    --color-green-dark: rgba(5, 29, 24, 1);
 
     /* Font Family */
     --Roboto: 'Roboto', sans-serif;
@@ -28,7 +29,6 @@ body {
 }
 
 header {
-    width: 100vw;
     padding: clamp(1em, 3vh, 2em) clamp(2em, 4vw, 3em);
     background-color: var(--color-green-dark);
     display: flex;
@@ -54,10 +54,18 @@ header {
     }
     
     .navigation {
-        border: solid red 1px;
+        /* border: solid red 1px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 2em;
+        font-family: var(--Roboto);
+
+        & a {
+            text-decoration: none;
+            color: var(--color-white);
+            font-weight: 500;
+            font-size: clamp(0.85rem, 1.3vw ,1rem); 
+        }
     }
 }
