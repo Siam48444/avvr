@@ -16,7 +16,10 @@ body {
 
 ::root {
     /* Color */
-
+    --color-red-primary: rgba(227, 66, 72, 1);
+    --color-white: rgba(245,242,239, 1);
+    --color-dark-light: rgba(143, 140, 121, 1);
+    --color-green-dark: rgba(4,25,20, 1);
 
     /* Font Family */
     --Roboto: 'Roboto', sans-serif;
