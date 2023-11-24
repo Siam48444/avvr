@@ -58,7 +58,7 @@ header {
         justify-content: space-between;
         gap: 3em;
         font-family: var(--Roboto);
-
+        
         & a {
             text-decoration: none;
             color: var(--color-white);
@@ -80,7 +80,7 @@ header {
                 transition: 500ms ease;
                 transition-property: transform;
             }
-
+            
             &:hover::after {
                 transform: scale(1);
                 transform-origin: left;
@@ -95,13 +95,16 @@ header {
 }
 
 .top_heading {
+    border: solid red 1px;
     font-family: var(--Roboto);
     padding: clamp(5em, 17vh, 8em) clamp(0.8em, 11vw, 9em);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     flex-direction: column;
-    gap: 3.6em;
+    gap: 3.4em;
+    margin-inline: auto;
+    width: min(100vw, 150em);
     
     & h1 {
         color: var(--color-white);
