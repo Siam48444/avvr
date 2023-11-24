@@ -73,12 +73,24 @@ header {
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            transition: 300ms ease-in-out;
+            transition-property: background-color, border-color;
+
+            &:hover {
+                background-color: var(--color-red-primary);
+                border-color: var(--color-red-primary);
+            }
+
+            &:hover .search_svg{
+                transform: scale(1.2);
+            }
 
             .search_svg {
                 fill: var(--color-white);
-                width: 1.2em;
-                height: 1.2em;
+                width: 1.1em;
+                height: 1.1em;
                 margin: 0;
+                transition: transform 300ms ease-in-out;
             }
         }
         
