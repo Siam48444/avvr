@@ -19,6 +19,7 @@ body {
     /* Color */
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
+    --color-white-light: rgba(245,242,239, 0.8);
     --color-black: rgba(4, 25, 20, 1);
     --color-black-light: rgba(67, 77, 72, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
@@ -95,9 +96,7 @@ header {
 
 .top_heading {
     font-family: var(--Roboto);
-    padding: clamp(4.5em, 11vh, 7em) clamp(0.8em, 11vw, 9em);
-    border: red solid 1px;
-    width: inherit;
+    padding: clamp(5em, 17vh, 8em) clamp(0.8em, 11vw, 9em);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -116,5 +115,76 @@ header {
         line-height: 100%;
         font-weight: 500;
         font-size: clamp(1.1rem, 1vw, 1.6rem);
+    }
+}
+
+.get_to_know_us {
+    .left_arrow_box {
+        background-color: var(--color-white);
+
+        .arrow {
+            fill: var(--color-black);
+        }
+    }
+
+    & button {
+        background-color: var(--color-black-light);
+        color: var(--color-white-light);
+    }
+
+    .right_arrow_box {
+        background-color: var(--color-red-primary);
+        
+        .arrow {
+            fill: var(--color-white);
+        }
+    }
+}
+
+.hover_arrow_button {
+    display: flex;
+    border: red solid 1px;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    
+    &:hover .arrow {
+        transform: rotate(-90deg);
+    }
+
+    .arrow_boxes {
+        width: 3.5em;
+        height: 3.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        
+        .arrow {
+            width: 1.2em;
+            height: 1.2em;
+            transform: rotate(-45deg);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .left_arrow_box {
+        transform-origin: left;  
+        transform: scale(0.5); 
+    }
+
+    .right_arrow_box {
+        transform-origin: right;
+    }
+    
+    & button {
+        padding: 1.2em 2em;
+        border-radius: 999em;
+        border: 0;
+        outline: 0;
+        font-size: 0.95rem;
+        font-weight: 500;
+        font-family: var(--Roboto);
+        cursor: pointer;
     }
 }
