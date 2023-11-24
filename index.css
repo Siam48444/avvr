@@ -61,6 +61,26 @@ header {
         justify-content: space-between;
         gap: 3em;
         font-family: var(--Roboto);
+
+        .search_button {
+            width: 3.5em;
+            height: 3.5em;
+            border: 0.005em solid var(--color-dark-light);
+            border-radius: 50%;
+            outline: none;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            .search_svg {
+                fill: var(--color-white);
+                width: 1.2em;
+                height: 1.2em;
+                margin: 0;
+            }
+        }
         
         & a {
             text-decoration: none;
@@ -171,7 +191,8 @@ main {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transition: transform 300ms ease-in-out, border-radius 300ms ease-in-out;
+        transition: 300ms ease-in-out;
+        transition-property: transform, border-radius;
     }
     
     .arrow_svg {
