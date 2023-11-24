@@ -13,7 +13,6 @@ body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    background-color: var(--color-green-dark);
 }
 
 :root {
@@ -39,6 +38,8 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.005em solid var(--color-dark-lighter);
+    position: fixed;
+    inset: 0 0 auto 0;
 
     .logo {
         color: var(--color-white);
@@ -93,6 +94,10 @@ header {
 .playfair_display_font {
     font-family: var(--Playfair-Display);
     font-style: italic;
+}
+
+main {
+    background-color: var(--color-green-dark);
 }
 
 .top_heading {
