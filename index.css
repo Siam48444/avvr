@@ -13,6 +13,7 @@ body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    background-color: var(--color-green-dark);
 }
 
 :root {
@@ -195,9 +196,13 @@ main {
 }
 
 .home_image {
-    border: red solid 1px;
-    width: min(100vw, 150em);
-    height: 30em;
+    /* border: red solid 1px; */
+    width: min(90vw, 150em);
+    height: clamp(10em, 70vh, 60em);
     margin-inline: auto;
+    border-radius: 1em;
     background-image: url(Home_Images/Home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
