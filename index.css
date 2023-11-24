@@ -146,8 +146,8 @@ main {
 }
 
 .top_heading {
+    padding: clamp(8em, 20vh, 10em) clamp(0.8em, 11vw, 9em);
     font-family: var(--Roboto);
-    padding: clamp(5em, 17vh, 8em) clamp(0.8em, 11vw, 9em);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
