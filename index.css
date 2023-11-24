@@ -101,7 +101,7 @@ header {
     align-items: baseline;
     justify-content: space-between;
     flex-direction: column;
-    gap: 3.4em;
+    gap: 3em;
     margin-inline: auto;
     width: min(100vw, 150em);
     
