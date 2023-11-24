@@ -122,7 +122,7 @@ header {
     .left_arrow_box {
         background-color: var(--color-white);
 
-        .arrow {
+        .arrow_svg {
             fill: var(--color-black);
         }
     }
@@ -135,7 +135,7 @@ header {
     .right_arrow_box {
         background-color: var(--color-red-primary);
         
-        .arrow {
+        .arrow_svg {
             fill: var(--color-white);
         }
     }
@@ -147,8 +147,8 @@ header {
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
-    
-    &:hover .arrow {
+
+    &:hover .arrow_svg {
         transform: rotate(-90deg);
     }
 
@@ -159,10 +159,10 @@ header {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        
+        transition: transform 300ms ease-in-out;
     }
     
-    .arrow {
+    .arrow_svg {
         width: 1.2em;
         height: 1.2em;
         transform: rotate(-45deg);
@@ -170,14 +170,13 @@ header {
     }
 
     .left_arrow_box {
-        transform-origin: left;  
-        transform: scale(0.5); 
+        transform-origin: left;
     }
 
     .right_arrow_box {
         transform-origin: right;
     }
-    
+
     & button {
         padding: 1.2em 2em;
         border-radius: 999em;
@@ -188,4 +187,13 @@ header {
         font-family: var(--Roboto);
         cursor: pointer;
     }
+}
+
+.arrow_disappeared {  /* Javascript "classList" */
+    transform: scale(0);
+    
+}
+
+.arrow_appeared {  /* Javascript "classList" */
+    transform: scale(1);
 }
