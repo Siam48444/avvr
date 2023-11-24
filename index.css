@@ -95,7 +95,6 @@ header {
 }
 
 .top_heading {
-    border: solid red 1px;
     font-family: var(--Roboto);
     padding: clamp(5em, 17vh, 8em) clamp(0.8em, 11vw, 9em);
     display: flex;
