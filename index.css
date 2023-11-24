@@ -98,6 +98,8 @@ header {
 
 main {
     background-color: var(--color-green-dark);
+    height: 120vh;
+    height: 120dvh;
 }
 
 .top_heading {
@@ -190,4 +192,12 @@ main {
         height: inherit;
         transition: border-radius 300ms ease-in-out;
     }
+}
+
+.home_image {
+    border: red solid 1px;
+    width: min(100vw, 150em);
+    height: 30em;
+    margin-inline: auto;
+    background-image: url(Home_Images/Home.jpg);
 }
