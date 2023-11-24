@@ -95,10 +95,6 @@ header {
     font-style: italic;
 }
 
-main {
-    position: relative;
-}
-
 .top_heading {
     font-family: var(--Roboto);
     padding: clamp(5em, 17vh, 8em) clamp(0.8em, 11vw, 9em);
