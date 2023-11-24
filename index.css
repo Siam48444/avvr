@@ -101,7 +101,7 @@ header {
     align-items: baseline;
     justify-content: space-between;
     flex-direction: column;
-    gap: 3em;
+    gap: 3.6em;
     
     & h1 {
         color: var(--color-white);
@@ -119,20 +119,12 @@ header {
 }
 
 .get_to_know_us {
-    .left_arrow_box {
-        background-color: var(--color-white);
-
-        .arrow_svg {
-            fill: var(--color-black);
-        }
-    }
-
     & button {
         background-color: var(--color-black-light);
         color: var(--color-white-light);
     }
 
-    .right_arrow_box {
+    .arrow_box {
         background-color: var(--color-red-primary);
         
         .arrow_svg {
@@ -143,42 +135,43 @@ header {
 
 .hover_arrow_button {
     display: flex;
-    border: red solid 1px;
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
+    border-radius: 999em;
+    height: 3.5em;
 
     &:hover .arrow_svg {
         transform: rotate(-90deg);
     }
 
-    .arrow_boxes {
+    &:hover .arrow_box {
+        border-radius: 0 50% 50% 0;
+    }
+
+    &:hover button {
+        border-radius: 999em 0 0 999em;
+    }
+
+    .arrow_box {
         width: 3.5em;
-        height: 3.5em;
+        height: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transition: transform 300ms ease-in-out;
+        transition: transform 300ms ease-in-out, border-radius 300ms ease-in-out;
     }
     
     .arrow_svg {
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.3em;
+        height: 1.3em;
         transform: rotate(-45deg);
         transition: transform 300ms ease-in-out;
     }
 
-    .left_arrow_box {
-        transform-origin: left;
-    }
-
-    .right_arrow_box {
-        transform-origin: right;
-    }
-
     & button {
-        padding: 1.2em 2em;
+        padding: 1.2em 2.2em;
         border-radius: 999em;
         border: 0;
         outline: 0;
@@ -186,14 +179,7 @@ header {
         font-weight: 500;
         font-family: var(--Roboto);
         cursor: pointer;
+        height: inherit;
+        transition: border-radius 300ms ease-in-out;
     }
-}
-
-.arrow_disappeared {  /* Javascript "classList" */
-    transform: scale(0);
-    
-}
-
-.arrow_appeared {  /* Javascript "classList" */
-    transform: scale(1);
 }
