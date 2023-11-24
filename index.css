@@ -4,6 +4,7 @@
 *, *:after, *:before {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body {
@@ -92,6 +93,10 @@ header {
 .playfair_display_font {
     font-family: var(--Playfair-Display);
     font-style: italic;
+}
+
+main {
+    position: relative;
 }
 
 .top_heading {
