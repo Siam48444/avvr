@@ -160,12 +160,13 @@ header {
         justify-content: center;
         border-radius: 50%;
         
-        .arrow {
-            width: 1.2em;
-            height: 1.2em;
-            transform: rotate(-45deg);
-            transition: transform 300ms ease-in-out;
-        }
+    }
+    
+    .arrow {
+        width: 1.2em;
+        height: 1.2em;
+        transform: rotate(-45deg);
+        transition: transform 300ms ease-in-out;
     }
 
     .left_arrow_box {
