@@ -19,6 +19,8 @@ body {
     /* Color */
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
+    --color-black: rgba(4, 25, 20, 1);
+    --color-black-light: rgba(67, 77, 72, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
     --color-dark-lighter: rgba(143, 140, 121, 0.4);
     --color-green-dark: rgba(5, 29, 24, 1);
@@ -40,7 +42,7 @@ header {
         color: var(--color-white);
         font-family: var(--Roboto);
         text-decoration: none;
-        font-size: clamp(1.5rem, 1.7vw, 1.4rem);
+        font-size: clamp(1.5rem, 1.7vw, 1.3rem);
         font-weight: 600;
         line-height: 100%;
         
@@ -92,9 +94,27 @@ header {
 }
 
 .top_heading {
-    /* border: red solid 1px; */
     font-family: var(--Roboto);
-    color: var(--color-white);
-    padding-block: clamp(3.3em, 9vh, 6em);
-    padding-inline: clamp(0.8em, 11vw, 9em);
+    padding: clamp(4.5em, 11vh, 7em) clamp(0.8em, 11vw, 9em);
+    border: red solid 1px;
+    width: inherit;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3em;
+    
+    & h1 {
+        color: var(--color-white);
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 500;
+        line-height: 100%;
+    }
+    
+    & p {
+        color: var(--color-dark-light);
+        line-height: 100%;
+        font-weight: 500;
+        font-size: clamp(1.1rem, 1vw, 1.6rem);
+    }
 }
