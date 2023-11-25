@@ -4,7 +4,12 @@
 *, *:after, *:before {
     margin: 0;
     padding: 0;
-    user-select: none;
+    scroll-behavior: smooth;
+    
+    &::selection {
+        background-color: var(--color-dark-light);
+        color: var(--color-green-dark);
+    }
 }
 
 body {
