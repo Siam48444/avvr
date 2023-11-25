@@ -246,12 +246,12 @@ main {
     background-size: cover;
     animation: home_image_parallax linear;
     animation-timeline: scroll();
-    --parrallax-speed: -10;
+    --parallax-speed: -3.5;
 }
 
 @keyframes home_image_parallax {
     100% {
-        background-position-y: var(--parallax-speed) * 10em;
+        background-position-y: calc(var(--parallax-speed) * 5em);
     }
 }
 
