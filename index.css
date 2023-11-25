@@ -253,6 +253,15 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    animation: hero_image_parallax linear;
+    animation-timeline: scroll();
+    --parallax-speed: -2;
+}
+
+@keyframes hero_image_parallax {
+    100% {
+        background-position: translateY(calc(var(--parallax-speed) * 5em));
+    }
 }
 
 .characteristics {
