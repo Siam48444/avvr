@@ -238,20 +238,20 @@ main {
 
 .home_image {
     width: min(90vw, 150em);
-    height: clamp(6em, 80vh, 60em);
+    height: clamp(6em, 70vh, 60em);
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position-y: center;
+    background-size: 120%;
     animation: hero_image_parallax linear;
     animation-timeline: scroll();
-    --parallax-speed: 2;
+    --parallax-speed: -2;
 }
 
 @keyframes hero_image_parallax {
     100% {
-        background-position-y: var(--parallax-speed) * 5em;
+        background-position-y: calc(var(--parallax-speed) * 10em);
     }
 }
 
@@ -306,10 +306,10 @@ main {
     
     .works {
         display: flex;
-        padding: clamp(5em, 20vh, 15em) clamp(3em, 15vw, 17em);
+        padding: clamp(5em, 20vh, 15em) clamp(3em, 15vw, 15em);
         align-items: center;
         justify-content: space-between;
-        gap: 3em;
+        gap: 3em;;
         
         &:first-child {
             border-bottom: solid 0.005em var(--color-dark-lighter);
@@ -323,6 +323,7 @@ main {
             justify-content: space-between;
             gap: 1em;
             font-family: var(--Roboto);
+            width: 60%;
 
             & h1 {
                 color: var(--color-black);
@@ -342,6 +343,6 @@ main {
     }
     
     .project_svg {
-        width: 70em;
+        width: 75em;
     }
 }
