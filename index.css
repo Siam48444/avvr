@@ -136,7 +136,6 @@ header {
 
 main {
     background-color: var(--color-green-dark);
-    height: 120vh;
     height: max-content;
 }
 
