@@ -172,7 +172,7 @@ main {
         color: var(--color-dark-light);
         line-height: 100%;
         font-weight: 500;
-        font-size: clamp(1.1rem, 1vw, 1.6rem);
+        font-size: clamp(1.1rem, 1.4vw, 1.6rem);
     }
 }
 
