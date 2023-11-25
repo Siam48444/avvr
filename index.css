@@ -267,23 +267,24 @@ main {
             fill: var(--color-dark-light);
             width: clamp(1.2em, 2.5vw, 2.2em);
             margin-bottom: 1em;
+            padding: 0;
         }
         
         & h3 {
             font-family: var(--Roboto);
-            font-weight: 600;
+            font-weight: 500;
             color: var(--color-white);
             font-size: clamp(1.3rem, 3vw, 1.8rem);
-            line-height: 130%;
+            line-height: 120%;
         }
         
         & p {
             text-align: justify;
             font-family: var(--Roboto);
             font-size: clamp(1rem, 1vw, 1.5rem);
-            font-weight: 400;
+            font-weight: 300;
             color: var(--color-white-light);
-            opacity: 0.8;
+            opacity: 0.7;
             line-height: 150%;
         }
     }
