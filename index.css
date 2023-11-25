@@ -21,15 +21,15 @@ body {
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
     --color-white-light: rgba(245,242,239, 0.8);
-    --color-black: rgba(3, 19, 15, 1);
+    --color-black: rgba(3, 19, 15, 0.9);
     --color-black-light: rgba(67, 77, 72, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
     --color-dark-lighter: rgba(143, 140, 121, 0.4);
     --color-green-dark: rgba(5, 29, 24, 1);
 
     /* Font Family */
-    --Roboto: 'Roboto', sans-serif;
-    --Playfair-Display: 'Playfair Display', serif;
+    --Roboto: 'Roboto', sans-serif, Arial;
+    --Playfair-Display: 'Playfair Display', sans-serif, Arial;
 }
 
 header {
@@ -40,17 +40,8 @@ header {
     justify-content: space-between;
     position: fixed;
     inset: 0 0 auto 0;
+    border-bottom: solid 0.005em var(--color-dark-lighter);
     z-index: 9;
-
-    &::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 2em;
-        border-top: solid 0.005em var(--color-dark-lighter);
-        border-radius: 5vw;
-        inset: 100% 0 auto 0;
-    }
 
     .logo {
         color: var(--color-white);
@@ -220,7 +211,7 @@ main {
         justify-content: center;
         border-radius: 50%;
         transition: 300ms ease-in-out;
-        transition-property: transform, border-radius, background-color;
+        transition-property: border-radius, background-color;
     }
     
     .arrow_svg {
@@ -255,12 +246,12 @@ main {
     background-size: cover;
     animation: hero_image_parallax linear;
     animation-timeline: scroll();
-    --parallax-speed: 1;
+    --parallax-speed: 2;
 }
 
 @keyframes hero_image_parallax {
     100% {
-        background-position: translateY(calc(var(--parallax-speed) * 5em));
+        background-position-y: var(--parallax-speed) * 5em;
     }
 }
 
@@ -271,7 +262,7 @@ main {
     width: min(80vw, 150em);
     margin-inline: auto;
     gap: 3em;
-    padding-block: clamp(0.8em, 8vw, 6em);
+    padding-block: clamp(0.8em, 8vw, 8em);
     
     .character_box {
         display: flex;
@@ -289,7 +280,6 @@ main {
         
         & h3 {
             font-family: var(--Roboto);
-            /* font-style: italic; */
             font-weight: 600;
             color: var(--color-white);
             font-size: clamp(1.3rem, 3vw, 1.8rem);
@@ -308,11 +298,50 @@ main {
 }
 
 .works_section {
-    /* border: red solid 1px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 30vh;
     background-color: var(--color-white);
+    
+    .works {
+        display: flex;
+        padding: clamp(5em, 20vh, 15em) clamp(3em, 15vw, 17em);
+        align-items: center;
+        justify-content: space-between;
+        gap: 3em;
+        
+        &:first-child {
+            border-bottom: solid 0.005em var(--color-dark-lighter);
+        }
+        
+        .work_title {
+            border: red solid 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 1em;
+            font-family: var(--Roboto);
+
+            & h1 {
+                color: var(--color-black);
+                font-weight: 500;
+                font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+                line-height: 100%;
+            }
+
+            .work_button {
+                margin-top: 2em;
+
+                & button {
+                    background-color: var(--color-dark-lighter);
+                }
+            }
+        }
+    }
+    
+    .project_svg {
+        width: 70em;
+    }
 }
