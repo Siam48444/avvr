@@ -358,5 +358,7 @@ main {
     
     .project_svg {
         width: clamp(20em, 50vw, 60em);
+        margin: 0;
+        padding: 0;
     }
 }
