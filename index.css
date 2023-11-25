@@ -21,7 +21,7 @@ body {
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
     --color-white-light: rgba(245,242,239, 0.8);
-    --color-black: rgba(4, 25, 20, 1);
+    --color-black: rgba(3, 19, 15, 1);
     --color-black-light: rgba(67, 77, 72, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
     --color-dark-lighter: rgba(143, 140, 121, 0.4);
@@ -255,7 +255,7 @@ main {
     background-size: cover;
     animation: hero_image_parallax linear;
     animation-timeline: scroll();
-    --parallax-speed: -2;
+    --parallax-speed: 1;
 }
 
 @keyframes hero_image_parallax {
@@ -288,8 +288,8 @@ main {
         }
         
         & h3 {
-            font-family: var(--Playfair-Display);
-            font-style: italic;
+            font-family: var(--Roboto);
+            /* font-style: italic; */
             font-weight: 600;
             color: var(--color-white);
             font-size: clamp(1.3rem, 3vw, 1.8rem);
@@ -301,9 +301,18 @@ main {
             font-size: clamp(1rem, 1vw, 1.5rem);
             font-weight: 400;
             color: var(--color-white-light);
-            /* border: red solid 1px; */
             opacity: 0.8;
             line-height: 150%;
         }
     }
+}
+
+.works_section {
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30vh;
+    background-color: var(--color-white);
 }
