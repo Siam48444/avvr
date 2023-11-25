@@ -316,7 +316,6 @@ main {
         }
         
         .work_title {
-            /* border: red solid 1px; */
             display: flex;
             flex-direction: column;
             align-items: baseline;
@@ -343,10 +342,22 @@ main {
             .work_button {
                 margin-top: 2em;
 
+                &:hover .arrow_box{
+                    background-color: var(--color-red-primary);
+                }
+
                 & button {
                     background-color: var(--color-dark-lighter);
                     color: var(--color-black-light);
                     font-weight: 500;
+                }
+
+                .arrow_box {
+                    background-color: var(--color-black);
+
+                    .arrow_svg {
+                        fill: var(--color-white);
+                    }
                 }
             }
         }
