@@ -114,27 +114,25 @@ header {
             text-decoration: none;
             color: var(--color-white);
             font-weight: 500;
-            font-size: clamp(0.85rem, 1.3vw, 1rem); 
+            font-size: clamp(0.8rem, 1.3vw, 1rem); 
             position: relative;
 
             &::after {
                 content: "";
                 position: absolute;
                 border-radius: 999em;
-                left: 0;
                 bottom: -0.3em;
-                width: 100%;
+                right: 0;
                 height: 0.05em;
+                width: 0;
                 background-color: var(--color-red-primary);
-                transform-origin: right;
-                transform: scale(0);
-                transition: 500ms ease;
-                transition-property: transform;
+                transition: 300ms ease-in-out;
+                transition-property: width;
             }
             
             &:hover::after {
-                transform: scale(1);
-                transform-origin: left;
+                left: 0;
+                width: 100%;
             }
         }
     }
@@ -149,6 +147,7 @@ main {
     background-color: var(--color-green-dark);
     height: 120vh;
     height: 120dvh;
+    position: relative;
 }
 
 .top_heading {
