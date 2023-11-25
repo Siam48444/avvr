@@ -360,9 +360,3 @@ main {
         width: clamp(20em, 50vw, 60em);
     }
 }
-
-.header_color {  /* Javascript "classList */
-    background-color: var(--color-white);
-    transition: 300ms ease-in-out;
-    transition-property: background-color;
-}
