@@ -238,12 +238,21 @@ main {
 
 .home_image {
     width: min(90vw, 150em);
-    height: clamp(8em, 60vh, 60em);
+    height: clamp(6em, 80vh, 80em);
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
+    animation: home_image_parallax linear;
+    animation-timeline: scroll();
+    --parrallax-speed: -10;
+}
+
+@keyframes home_image_parallax {
+    100% {
+        background-position-y: var(--parallax-speed) * 10em;
+    }
 }
 
 .characteristics {
@@ -303,6 +312,7 @@ main {
         align-items: center;
         justify-content: space-between;
         gap: 3em;;
+        max-width: 150em;
         
         &:first-child {
             border-bottom: solid 0.005em var(--color-dark-lighter);
