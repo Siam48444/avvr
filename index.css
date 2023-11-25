@@ -159,10 +159,10 @@ main {
     }
     
     & p {
-        color: var(--color-dark-light);
+        color: var(--color-white-light);
         line-height: 100%;
-        font-weight: 500;
-        font-size: clamp(1.1rem, 1.4vw, 1.6rem);
+        font-weight: 400;
+        font-size: clamp(1.1rem, 1.5vw, 1.5rem);
     }
 }
 
