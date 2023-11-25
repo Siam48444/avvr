@@ -59,6 +59,12 @@ header {
         font-size: clamp(1.5rem, 1.7vw, 1.3rem);
         font-weight: 600;
         line-height: 100%;
+        transition: 300ms ease-in-out;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.7;
+        }
         
         & span {
             font-weight: 300;
@@ -146,7 +152,7 @@ main {
 }
 
 .top_heading {
-    padding: clamp(8em, 20vh, 10em) clamp(0.8em, 11vw, 9em);
+    padding: clamp(11em, 20vh, 13em) clamp(0.8em, 11vw, 9em);
     font-family: var(--Roboto);
     display: flex;
     align-items: baseline;
@@ -196,10 +202,12 @@ main {
 
     &:hover .arrow_svg {
         transform: rotate(-90deg);
+        fill: var(--color-white);
     }
 
     &:hover .arrow_box {
         border-radius: 0 50% 50% 0;
+        background-color: var(--color-red-primary);
     }
 
     &:hover button {
@@ -214,14 +222,15 @@ main {
         justify-content: center;
         border-radius: 50%;
         transition: 300ms ease-in-out;
-        transition-property: transform, border-radius;
+        transition-property: transform, border-radius, background-color;
     }
     
     .arrow_svg {
         width: 1.3em;
         height: 1.3em;
         transform: rotate(-45deg);
-        transition: transform 300ms ease-in-out;
+        transition: 300ms ease-in-out;
+        transition-property: transform, fill;
     }
 
     & button {
@@ -239,13 +248,20 @@ main {
 }
 
 .home_image {
-    /* border: red solid 1px; */
     width: min(90vw, 150em);
-    height: clamp(10em, 70vh, 60em);
-    margin-inline: auto;
+    height: clamp(5em, 70vh, 60em);
+    margin: 5em auto;
     border-radius: 1em;
-    background-image: url(Home_Images/Home.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    animation: home_image_parallax linear;
+    animation-timeline: scroll();
+    --parallax-speed: -2;
 }
+/* 
+@keyframes home_image_parallax {
+    80% {
+        transform: translateY(calc(var(--parallax-speed) * 5em));
+    }
+} */
