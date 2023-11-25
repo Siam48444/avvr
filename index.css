@@ -306,7 +306,7 @@ main {
     
     .works {
         display: flex;
-        padding: clamp(5em, 20vh, 15em) clamp(3em, 15vw, 15em);
+        padding: clamp(5em, 20vh, 15em) clamp(3em, 10vw, 15em);
         align-items: center;
         justify-content: space-between;
         gap: 3em;;
@@ -316,7 +316,7 @@ main {
         }
         
         .work_title {
-            border: red solid 1px;
+            /* border: red solid 1px; */
             display: flex;
             flex-direction: column;
             align-items: baseline;
@@ -327,9 +327,17 @@ main {
 
             & h1 {
                 color: var(--color-black);
-                font-weight: 500;
+                font-weight: 400;
                 font-size: clamp(1.3rem, 2.5vw, 2.5rem);
-                line-height: 100%;
+                line-height: 120%;
+            }
+
+            & p {
+                color: var(--color-black-light);
+                line-height: 150%;
+                opacity: 0.8;
+                font-weight: 300;
+                font-size: clamp(0.85rem, 2vw, 1.1rem);
             }
 
             .work_button {
@@ -337,12 +345,14 @@ main {
 
                 & button {
                     background-color: var(--color-dark-lighter);
+                    color: var(--color-black-light);
+                    font-weight: 500;
                 }
             }
         }
     }
     
     .project_svg {
-        width: 75em;
+        width: clamp(20em, 50vw, 60em);
     }
 }
