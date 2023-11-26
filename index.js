@@ -13,8 +13,3 @@ function HeaderColorChange() {
     };
 };
 window.addEventListener("scroll", HeaderColorChange)
-
-
-
-
-console.log();
