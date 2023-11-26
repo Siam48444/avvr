@@ -463,3 +463,29 @@ main {
         }
     }
 }
+
+.header_color {  /* javascript classList */
+    background-color: var(--color-white);
+    transition: 300ms ease;
+    transition-property: background-color;
+    color: var(--color-black);
+    
+    transition: 300ms ease;
+    transition-property: color;
+    .logo {
+        color: var(--color-black);
+    }
+    
+    .navigation a {
+        transition: 200ms ease;
+        transition-property: color;
+        color: var(--color-black);
+        
+    }
+    
+    .search_svg {
+        transition: 200ms ease;
+        transition-property: fill;
+        fill: var(--color-black);
+    }
+}
