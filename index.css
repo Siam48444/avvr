@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-green-dark);
+    scrollbar-gutter: stable;
 }
 
 :root {
@@ -153,7 +154,7 @@ main {
     flex-direction: column;
     gap: 3em;
     margin-inline: auto;
-    width: min(100vw, 150em);
+    width: min(100vw, 110em);
     
     & h1 {
         color: var(--color-white);
@@ -207,25 +208,7 @@ main {
         border-radius: 999em 0 0 999em;
     }
     
-    .arrow_box {
-        width: 3.5em;
-        height: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: 300ms ease-in-out;
-        transition-property: border-radius, background-color;
-    }
     
-    .arrow_svg {
-        width: 1.3em;
-        height: 1.3em;
-        transform: rotate(-45deg);
-        transition: 300ms ease-in-out;
-        transition-property: transform, fill;
-    }
-
     & button {
         padding: 1.2em 2.2em;
         border-radius: 999em;
@@ -240,8 +223,27 @@ main {
     }
 }
 
+.arrow_box {
+    width: 3.5em;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+    transition-property: border-radius, background-color;
+    
+    .arrow_svg {
+        width: 1.3em;
+        height: 1.3em;
+        transform: rotate(-45deg);
+        transition: 300ms ease-in-out;
+        transition-property: transform, fill;
+    }
+}
+
 .home_image {
-    width: min(90vw, 150em);
+    width: min(90vw, 110em);
     height: clamp(6em, 80vh, 80em);
     margin-inline: auto;
     border-radius: 1em;
@@ -263,7 +265,7 @@ main {
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
-    width: min(80vw, 150em);
+    width: min(80vw, 110em);
     margin-inline: auto;
     gap: 3em;
     padding-block: clamp(0.8em, 8vw, 8em);
@@ -316,7 +318,7 @@ main {
         align-items: center;
         justify-content: space-between;
         gap: 3em;;
-        max-width: 150em;
+        max-width: 110em;
         
         &:first-child {
             border-bottom: solid 0.005em var(--color-dark-lighter);
@@ -334,7 +336,7 @@ main {
             & h1 {
                 color: var(--color-black);
                 font-weight: 400;
-                font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+                font-size: clamp(1.1rem, 2.5vw, 2.5rem);
                 line-height: 120%;
             }
             
@@ -344,16 +346,16 @@ main {
                 line-height: 150%;
                 opacity: 0.8;
                 font-weight: 300;
-                font-size: clamp(0.85rem, 2vw, 1.1rem);
+                font-size: clamp(0.7rem, 2vw, 1.1rem);
             }
-
+            
             .work_button {
                 margin-top: 2em;
-
+                
                 &:hover .arrow_box{
                     background-color: var(--color-red-primary);
                 }
-
+                
                 & button {
                     background-color: var(--color-dark-lighter);
                     color: var(--color-black-light);
@@ -372,8 +374,58 @@ main {
     }
     
     .project_svg {
-        width: clamp(20em, 50vw, 60em);
+        width: clamp(15em, 55vw, 70em);
         margin: 0;
         padding: 0;
+    }
+}
+
+.overview_section {
+    max-width: 110em;
+    margin-inline: auto;
+    font-family: var(--Roboto);
+    padding: clamp(5em, 12vh, 13em) clamp(3em, 10vw, 15em);
+    
+    & h1 {
+        color: var(--color-white);
+        font-size: clamp(1.1rem, 2.5vw, 2.5rem);
+        font-weight: 500;
+        line-height: 100%;
+        position: relative;
+        border: red solid 1px;
+        margin-bottom: clamp(1.5em, 2.2vh, 2em);
+    }
+    
+    .epertises_columns {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-content: baseline;
+            justify-content: space-between;
+
+            & h2 {
+                padding-bottom: clamp(1.3em, 2vh, 1.8em);
+                color: var(--color-white);
+                font-weight: 400;
+                font-size: clamp(1rem, 2vw, 2.2rem);
+                border-bottom: solid 0.005em var(--color-dark-lighter);
+            }
+
+            & a {
+                text-decoration: none;
+                color: var(--color-white);
+                opacity: 0.5;
+                font-weight: 300;
+                font-size: clamp(0.7rem, 2vw, 1.1rem);
+                padding-block: clamp(0.3em, 1vh, 1em);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
     }
 }
