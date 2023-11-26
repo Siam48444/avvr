@@ -56,7 +56,7 @@ header {
         font-size: clamp(1.3rem, 1.6vw, 1.7rem);
         font-weight: 600;
         line-height: 100%;
-        transition: 300ms ease-in-out;
+        transition: 200ms ease;
         transition-property: opacity;
 
         &:hover {
@@ -86,7 +86,7 @@ header {
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: 300ms ease-in-out;
+            transition: 200ms ease;
             transition-property: background-color, border-color;
 
             &:hover {
@@ -103,7 +103,7 @@ header {
                 width: 1.1em;
                 height: 1.1em;
                 margin: 0;
-                transition: transform 300ms ease-in-out;
+                transition: transform 200ms ease;
             }
         }
         
@@ -123,7 +123,7 @@ header {
                 height: 0.05em;
                 width: 0;
                 background-color: var(--color-red-primary);
-                transition: 300ms ease-in-out;
+                transition: 200ms ease;
                 transition-property: width;
             }
             
@@ -219,7 +219,7 @@ main {
         font-family: var(--Roboto);
         cursor: pointer;
         height: inherit;
-        transition: border-radius 300ms ease-in-out;
+        transition: border-radius 200ms ease;
     }
 }
 
@@ -230,14 +230,14 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: 300ms ease-in-out;
+    transition: 200ms ease;
     transition-property: border-radius, background-color;
     
     .arrow_svg {
         width: 1.3em;
         height: 1.3em;
         transform: rotate(-45deg);
-        transition: 300ms ease-in-out;
+        transition: 200ms ease;
         transition-property: transform, fill;
     }
 }
@@ -286,20 +286,20 @@ main {
         }
         
         & h3 {
-            font-family: var(--Roboto);
-            font-weight: 500;
+            font-family: var(--Playfair-Display);
+            font-style: italic;
+            font-weight: 600;
             color: var(--color-white);
             font-size: clamp(1.3rem, 3vw, 1.8rem);
             line-height: 120%;
         }
         
         & p {
-            text-align: justify;
             font-family: var(--Roboto);
             font-size: clamp(1rem, 1vw, 1.5rem);
             font-weight: 300;
             color: var(--color-white-light);
-            opacity: 0.7;
+            opacity: 0.8;
             line-height: 150%;
         }
     }
@@ -336,12 +336,12 @@ main {
             & h1 {
                 color: var(--color-black);
                 font-weight: 400;
-                font-size: clamp(1.1rem, 2.5vw, 2.5rem);
+                font-size: clamp(1.2rem, 2.8vw, 2.5rem);
                 line-height: 120%;
             }
             
             & p {
-                text-align: justify;
+                
                 color: var(--color-black-light);
                 line-height: 150%;
                 opacity: 0.8;
@@ -388,43 +388,77 @@ main {
     
     & h1 {
         color: var(--color-white);
-        font-size: clamp(1.1rem, 2.5vw, 2.5rem);
-        font-weight: 500;
+        font-family: var(--Playfair-Display);
+        font-style: italic;
+        font-size: clamp(1.2rem, 3vw, 2.5rem);
+        font-weight: 600;
         line-height: 100%;
         position: relative;
-        border: red solid 1px;
-        margin-bottom: clamp(1.5em, 2.2vh, 2em);
+        margin-bottom: clamp(2em, 7vh, 6em);
     }
     
     .epertises_columns {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        gap: clamp(5em, 10vw, 20em);
         
         .column {
+            flex: 1;
+            gap: 1em;
             display: flex;
             flex-direction: column;
             align-content: baseline;
             justify-content: space-between;
-
+            
             & h2 {
                 padding-bottom: clamp(1.3em, 2vh, 1.8em);
                 color: var(--color-white);
                 font-weight: 400;
-                font-size: clamp(1rem, 2vw, 2.2rem);
+                font-size: clamp(1rem, 2.2vw, 2.2rem);
                 border-bottom: solid 0.005em var(--color-dark-lighter);
             }
 
             & a {
                 text-decoration: none;
                 color: var(--color-white);
-                opacity: 0.5;
-                font-weight: 300;
-                font-size: clamp(0.7rem, 2vw, 1.1rem);
-                padding-block: clamp(0.3em, 1vh, 1em);
+                font-weight: 400;
+                font-size: clamp(0.7rem, 1.5vw, 1rem);
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                
+                & p {
+                    opacity: 0.5;
+                    transition: 200ms ease;
+                    transition-property: opacity;  
+                }
+
+                &:hover p {
+                    opacity: 1;
+                }
+
+                &:hover .arrow_box{
+                    background-color: var(--color-red-primary);
+                    border: solid var(--color-red-primary) 0.005em;
+                }
+
+                &:hover .arrow_svg {
+                    transform: rotate(-90deg);
+                }
+                
+                .arrow_svg {
+                    fill: var(--color-white);
+                    width: 1em;
+                }
+
+                .arrow_box {
+                    border: solid var(--color-dark-lighter) 0.005em;
+                    height: 2em;
+                    width: 2em;
+                    transition: 200ms ease;
+                    transition-property: border-radius, background-color, border;                    
+                }
             }
         }
     }
