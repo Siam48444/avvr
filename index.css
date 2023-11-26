@@ -244,7 +244,7 @@ main {
 
 .home_image {
     width: min(90vw, 110em);
-    height: clamp(6em, 80vh, 80em);
+    height: clamp(6em, 75vh, 60em);
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
