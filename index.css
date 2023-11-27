@@ -462,7 +462,7 @@ main {
 }
 
 .about_us {
-    height: clamp(6em, 40vw, 50em);
+    height: clamp(6em, 40vw, 90em);
     margin-inline: auto;
     background-size: cover;
     background-repeat: no-repeat;
