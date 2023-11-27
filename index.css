@@ -220,7 +220,7 @@ main {
     border-radius: 1em;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 110%;
+    background-size: cover;
 }
 
 .characteristics {
