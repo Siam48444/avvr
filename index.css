@@ -211,12 +211,12 @@ main {
 
 .home_image {
     width: min(90vw, 110em);
-    height: clamp(6em, 70vh, 50em);
+    height: clamp(6em, 50vw, 50em);
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background-position: center;
+    background-size: 110%;
 }
 
 .characteristics {
