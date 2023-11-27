@@ -211,21 +211,12 @@ main {
 
 .home_image {
     width: min(90vw, 110em);
-    height: clamp(6em, 85vh, 55em);
+    height: clamp(6em, 70vh, 50em);
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    animation: home_image_parallax linear;
-    animation-timeline: scroll();
-    --parallax-speed: -4;
-}
-
-@keyframes home_image_parallax {
-    100% {
-        background-position-y: calc(var(--parallax-speed) * 5em);
-    }
 }
 
 .characteristics {
