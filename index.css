@@ -489,7 +489,9 @@ main {
         transform: translateY(-50%);
        
         .people_svg {
-            display: none;
+            fill: var(--color-white);
+            width: 2em;
+            margin-bottom: 3%;
         }
 
         & h3 {
