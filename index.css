@@ -464,8 +464,17 @@ main {
 .about_us {
     height: clamp(6em, 40vw, 50em);
     margin-inline: auto;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(0.9);
+    background-position-y: top;
+    animation: about_us_parallax linear;
+    animation-timeline: scroll();
 }
+
+@keyframes about_us_parallax {
+    50% {
+        background-position-y: bottom;
+    }
+}
+
