@@ -1,41 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*, *:after, *:before {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    
-    &::selection {
-        background-color: var(--color-dark-light);
-        color: var(--color-green-dark);
-    }
-}
-
 body {
-    box-sizing: border-box;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
     background-color: var(--color-green-dark);
-    scrollbar-gutter: stable;
-}
-
-:root {
-    /* Color */
-    --color-red-primary: rgba(227, 66, 72, 1);
-    --color-white: rgba(245,242,239, 1);
-    --color-white-light: rgba(245,242,239, 0.8);
-    --color-black: rgba(3, 19, 15, 0.9);
-    --color-black-light: rgba(67, 77, 72, 1);
-    --color-dark-light: rgba(143, 140, 121, 1);
-    --color-dark-lighter: rgba(143, 140, 121, 0.4);
-    --color-green-dark: rgba(5, 29, 24, 1);
-
-    /* Font Family */
-    --Roboto: 'Roboto', sans-serif, Arial;
-    --Playfair-Display: 'Playfair Display', sans-serif, Arial;
 }
 
 header {
@@ -244,7 +208,7 @@ main {
 
 .home_image {
     width: min(90vw, 110em);
-    height: clamp(6em, 75vh, 60em);
+    height: clamp(6em, 85vh, 55em);
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
@@ -252,7 +216,7 @@ main {
     background-size: cover;
     animation: home_image_parallax linear;
     animation-timeline: scroll();
-    --parallax-speed: -3.5;
+    --parallax-speed: -4;
 }
 
 @keyframes home_image_parallax {
