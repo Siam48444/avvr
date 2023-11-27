@@ -60,6 +60,7 @@ header {
 
             &:hover .search_svg{
                 transform: scale(1.2);
+                fill: var(--color-white);
             }
 
             .search_svg {
@@ -67,7 +68,8 @@ header {
                 width: 1.1em;
                 height: 1.1em;
                 margin: 0;
-                transition: transform 200ms ease;
+                transition: 200ms ease;
+                transition-property: transform, fill;
             }
         }
         
