@@ -12,6 +12,7 @@ header {
     inset: 0 0 auto 0;
     border-bottom: solid 0.005em var(--color-dark-lighter);
     z-index: 9;
+    transition: background-color 300ms ease-in-out;
 
     .logo {
         color: var(--color-white);
@@ -20,7 +21,7 @@ header {
         font-size: clamp(1.3rem, 1.6vw, 1.7rem);
         font-weight: 600;
         line-height: 100%;
-        transition: 200ms ease;
+        transition: 300ms ease-in-out;
         transition-property: opacity;
 
         &:hover {
@@ -50,7 +51,7 @@ header {
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: 200ms ease;
+            transition: 300ms ease-in-out;
             transition-property: background-color, border-color;
 
             &:hover {
@@ -60,7 +61,6 @@ header {
 
             &:hover .search_svg{
                 transform: scale(1.2);
-                fill: var(--color-white);
             }
 
             .search_svg {
@@ -68,7 +68,7 @@ header {
                 width: 1.1em;
                 height: 1.1em;
                 margin: 0;
-                transition: 200ms ease;
+                transition: 300ms ease-in-out;
                 transition-property: transform, fill;
             }
         }
@@ -89,7 +89,7 @@ header {
                 height: 0.05em;
                 width: 0;
                 background-color: var(--color-red-primary);
-                transition: 200ms ease;
+                transition: 300ms ease-in-out;
                 transition-property: width;
             }
             
@@ -185,7 +185,7 @@ main {
         font-family: var(--Roboto);
         cursor: pointer;
         height: inherit;
-        transition: border-radius 200ms ease;
+        transition: border-radius 300ms ease-in-out;
     }
 }
 
@@ -196,14 +196,14 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: 200ms ease;
+    transition: 300ms ease-in-out;
     transition-property: border-radius, background-color;
     
     .arrow_svg {
         width: 1.3em;
         height: 1.3em;
         transform: rotate(-45deg);
-        transition: 200ms ease;
+        transition: 300ms ease-in-out;
         transition-property: transform, fill;
     }
 }
@@ -396,7 +396,7 @@ main {
                 
                 & p {
                     opacity: 0.5;
-                    transition: 200ms ease;
+                    transition: 300ms ease-in-out;
                     transition-property: opacity;  
                 }
 
@@ -422,7 +422,7 @@ main {
                     border: solid var(--color-dark-lighter) 0.005em;
                     height: 2em;
                     width: 2em;
-                    transition: 200ms ease;
+                    transition: 300ms ease-in-out;
                     transition-property: border-radius, background-color, border;                    
                 }
             }
@@ -432,25 +432,25 @@ main {
 
 .header_color {  /* javascript classList */
     background-color: var(--color-white);
-    transition: 300ms ease;
+    transition: 300ms ease-in-out;
     transition-property: background-color;
     color: var(--color-black);
     
-    transition: 300ms ease;
+    transition: 300ms ease-in-out;
     transition-property: color;
     .logo {
         color: var(--color-black);
     }
     
     .navigation a {
-        transition: 200ms ease;
+        transition: 300ms ease-in-out;
         transition-property: color;
         color: var(--color-black);
         
     }
     
     .search_svg {
-        transition: 200ms ease;
+        transition: 300ms ease-in-out;
         transition-property: fill;
         fill: var(--color-black);
     }
