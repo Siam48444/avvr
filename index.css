@@ -159,6 +159,7 @@ main {
     text-decoration: none;
     border-radius: 999em;
     height: 3.5em;
+    transform-origin: left;
     
     &:hover .arrow_svg {
         transform: rotate(-90deg);
