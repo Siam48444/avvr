@@ -219,8 +219,16 @@ main {
     margin-inline: auto;
     border-radius: 1em;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: top;
     background-size: cover;
+    animation: home_parallax linear;
+    animation-timeline: scroll();
+}
+
+@keyframes home_parallax {
+    50% {
+        background-position-y: bottom;
+    }
 }
 
 .characteristics {
