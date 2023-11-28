@@ -16,6 +16,7 @@ function HeaderColorChange() {
         for(let i = 0; i < HeaderElements.length; i++) {
             HeaderElements[i].style.color = "var(--color-black)";
         };
+
         // Search Hover.    
         HeaderSearchBox.addEventListener("mouseenter", ()=> {
             HeaderSVG.style.fill = "var(--color-white)";
@@ -30,6 +31,7 @@ function HeaderColorChange() {
         for(let i = 0; i < HeaderElements.length; i++) {
             HeaderElements[i].style.color = "var(--color-white)";
         };
+
         // Search Hover.        
         HeaderSearchBox.addEventListener("mouseenter", ()=> {
             HeaderSVG.style.fill = "var(--color-white)";
@@ -44,6 +46,7 @@ function HeaderColorChange() {
         for(let i = 0; i < HeaderElements.length; i++) {
             HeaderElements[i].style.color = "var(--color-white)";
         };
+        
         // Search Hover.        
         HeaderSearchBox.addEventListener("mouseenter", ()=> {
             HeaderSVG.style.fill = "var(--color-white)";
@@ -55,3 +58,17 @@ function HeaderColorChange() {
     };
 };
 window.addEventListener("scroll", HeaderColorChange)
+
+
+// Custom mouse cursor.
+function TrackCursor(e) {
+    const CustomCursor = document.querySelector(".cursor");
+    var w = CustomCursor.clientWidth;
+    var h = CustomCursor.clientHeight;
+
+    CustomCursor.style.transform = `translate(${e.clientX - w / 2}px, ${e.clientY - h / 2}px)`
+    // CustomCursor.style.top = e.pageY + "px";
+
+    console.log();
+};
+window.addEventListener("mousemove", TrackCursor);
