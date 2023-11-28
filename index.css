@@ -10,6 +10,7 @@ body {
     border-radius: 99em;
     z-index: 9999999;
     pointer-events: none;
+    transition: transform 50ms ease;
 }
 
 header {
