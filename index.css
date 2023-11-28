@@ -325,7 +325,7 @@ main {
                 line-height: 150%;
                 opacity: 0.8;
                 font-weight: 400;
-                font-size: clamp(0.7rem, 1.8vw, 1.1rem);
+                font-size: clamp(0.7rem, 1.5vw, 1.1rem);
             }
             
             .work_button {
@@ -610,7 +610,7 @@ footer {
         }
 
         .hover_arrow_button {
-            transform: scale(0.95);   
+            transform: scale(0.9);   
         }
     }
 
@@ -618,6 +618,22 @@ footer {
         .character_icon {
             transform: scale(0.95);
         }
+    }
+
+    .PC_work {
+        display: none;
+    }
+
+    .TAB_work {
+        
+
+        & .works {
+            flex-direction: column;
+        }
+    }
+
+    .work_button {
+        transform: scale(0.9);
     }
 }
 
