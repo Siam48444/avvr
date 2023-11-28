@@ -529,11 +529,11 @@ main {
         }
 
         & a:hover {
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
         .sitemap {
-            opacity: 0.5;
+            opacity: 0.4;
         }
     }
     
@@ -544,7 +544,7 @@ main {
         gap: 1em;
         
         .links_svgs {
-            opacity: 0.5;
+            opacity: 0.4;
             width: 1.3em;
             fill: var(--color-white);
         }
