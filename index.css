@@ -2,17 +2,6 @@ body {
     background-color: var(--color-green-dark);
 }
 
-.cursor {
-    position: absolute;
-    width: clamp(0.6em, 0.8vw, 1em);
-    height: clamp(0.6em, 0.8vw, 1em);
-    background-color: var(--color-red-primary);
-    border-radius: 99em;
-    z-index: 9999999;
-    pointer-events: none;
-    transition: transform 50ms ease;
-}
-
 header {
     padding: clamp(0.8em, 2vh, 1.6em) clamp(1.8em, 4vw, 2.8em);
     background-color: var(--color-green-dark);
@@ -540,11 +529,11 @@ main {
         }
 
         & a:hover {
-            opacity: 0.6;
+            opacity: 0.7;
         }
 
         .sitemap {
-            opacity: 0.4;
+            opacity: 0.5;
         }
     }
     
@@ -555,8 +544,8 @@ main {
         gap: 1em;
         
         .links_svgs {
-            opacity: 0.4;
-            width: 1.2em;
+            opacity: 0.5;
+            width: 1.3em;
             fill: var(--color-white);
         }
     }
