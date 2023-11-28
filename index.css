@@ -541,9 +541,16 @@ main {
             opacity: 0.6;
         }
 
-        & p {
+        .sitemap {
             opacity: 0.4;
         }
+    }
+
+    .bottom_infos {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        gap: 0.2em;
     }
 }
 
