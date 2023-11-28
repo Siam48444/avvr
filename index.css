@@ -531,7 +531,14 @@ main {
         & > * {
             color: var(--color-white);
             font-weight: 400;
+            font-size: clamp(0.7rem, 1.5vw, 1rem);
             text-decoration: none;
+            transition: 200ms ease-in-out;
+            transition-property: opacity;
+        }
+
+        & a:hover {
+            opacity: 0.6;
         }
 
         & p {
