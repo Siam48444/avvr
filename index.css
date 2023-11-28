@@ -214,6 +214,7 @@ main {
 }
 
 .home_image {
+    position: relative;
     width: min(90vw, 110em);
     height: clamp(6em, 40vw, 50em);
     margin-inline: auto;
@@ -223,6 +224,46 @@ main {
     background-size: cover;
     animation: home_parallax linear;
     animation-timeline: scroll();
+
+    .scroll_down_indicator {
+        border-radius: 999em;
+        position: absolute;
+        margin: 0;
+        right: clamp(1em, 2vw, 2em);
+        top: clamp(1em, 2vw, 2em);
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        font-family: var(--Roboto);
+        font-size: clamp(0.7rem, 1.1vw, 1rem);;
+        font-weight: 400;
+        color: var(--color-white);
+        cursor: pointer;
+
+        &:hover .arrow_box{
+            background-color: var(--color-red-primary);
+        }
+
+        &:hover .arrow_svg{
+            transform: rotate(0);
+            fill: var(--color-white);
+        }
+
+        .arrow_box {
+            background-color: var(--color-white);
+            height: 2.2em;
+            width: 2.2em;
+            transition: 300ms ease-in-out;
+            transition-property: background-color;
+        }
+
+        .arrow_svg {
+            fill: var(--color-black);
+            width: 1.1em;
+            transition: 300ms ease-in-out;
+            transition-property: fill, transform;
+        }
+    }
 }
 
 @keyframes home_parallax {
@@ -436,7 +477,7 @@ main {
 }
 
 .about_us {
-    height: clamp(6em, 40vw, 90em);
+    height: clamp(6em, 50vw, 90em);
     margin-inline: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -501,11 +542,11 @@ footer {
     font-family: var(--Roboto);
 
     .CODE {
-        transition: 200ms ease-in-out;
-        transition-property: color;
+        transition: 300ms ease;
+        transition-property: opacity;
 
         &:hover {
-            color: var(--color-red-primary);
+            opacity: 0.6;
         }
     }
     
@@ -516,10 +557,10 @@ footer {
     .footer_right a {
         opacity: 0.5;
         transition: 200ms ease-in-out;
-        transition-property: color;
+        transition-property: opacity;
 
         &:hover {
-            color: var(--color-dark-light);
+           opacity: 0.3;
         }
     }
 
