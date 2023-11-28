@@ -508,7 +508,7 @@ main {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    border-radius: 0 0 2vh 2vh;
+    border-radius: 0 0 3vh 3vh;
 
     .links_column {
         display: flex;
