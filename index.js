@@ -66,8 +66,18 @@ function TrackCursor(e) {
     var w = CustomCursor.clientWidth;
     var h = CustomCursor.clientHeight;
 
+    document.addEventListener("mouseenter", ()=> {
+        CustomCursor.style.display = "block";
+    });
+
+    document.addEventListener("mouseleave", ()=> {
+        CustomCursor.style.display = "none";
+    });
+
     CustomCursor.style.transform = `translate(${e.clientX - w / 2}px, ${e.clientY - h / 2}px)`
-    // CustomCursor.style.top = e.pageY + "px";
+
+
+    
 
     console.log();
 };
