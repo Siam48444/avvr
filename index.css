@@ -226,6 +226,7 @@ main {
     animation-timeline: scroll();
 
     .scroll_down_indicator {
+        user-select: none;
         border-radius: 999em;
         position: absolute;
         margin: 0;
