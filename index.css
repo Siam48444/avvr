@@ -24,25 +24,6 @@ header {
     border-bottom: solid 0.005em var(--color-dark-lighter);
     z-index: 9;
     transition: background-color 300ms ease-in-out;
-
-    .logo {
-        color: var(--color-white);
-        font-family: var(--Roboto);
-        text-decoration: none;
-        font-size: clamp(1.3rem, 1.6vw, 1.7rem);
-        font-weight: 600;
-        line-height: 100%;
-        transition: 300ms ease-in-out;
-        transition-property: opacity;
-
-        &:hover {
-            opacity: 0.7;
-        }
-        
-        & span {
-            font-weight: 300;
-        }
-    }
     
     .navigation {
         display: flex;
@@ -76,6 +57,25 @@ header {
                 width: 100%;
             }
         }
+    }
+}
+
+.logo {
+    color: var(--color-white);
+    font-family: var(--Roboto);
+    text-decoration: none;
+    font-size: clamp(1.3rem, 1.6vw, 1.7rem);
+    font-weight: 600;
+    line-height: 100%;
+    transition: 300ms ease-in-out;
+    transition-property: opacity;
+
+    &:hover {
+        opacity: 0.7;
+    }
+    
+    & span {
+        font-weight: 300;
     }
 }
 
@@ -510,6 +510,15 @@ main {
     50% {
         background-position-y: bottom;
     }
+}
+
+.bottom_links {
+    background-color: var(--color-black-light);
+    font-family: var(--Roboto);
+    padding: clamp(2em, 5vw, 5em);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
 }
 
 footer {
