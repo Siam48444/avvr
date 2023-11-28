@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    padding: clamp(0.8em, 2vh, 1.6em) clamp(1.8em, 4vw, 2.8em);
+    padding: clamp(0.8em, 2vh, 1.6em) clamp(1.4em, 4vw, 2.4em);
     background-color: var(--color-green-dark);
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@ header {
     inset: 0 0 auto 0;
     border-bottom: solid 0.005em var(--color-dark-lighter);
     z-index: 9;
-    transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease;
     
     .navigation {
         display: flex;
@@ -37,7 +37,7 @@ header {
                 height: 0.05em;
                 width: 0;
                 background-color: var(--color-red-primary);
-                transition: 300ms ease-in-out;
+                transition: 300ms ease;
                 transition-property: width;
             }
             
@@ -56,7 +56,7 @@ header {
     font-size: clamp(1.3rem, 1.6vw, 1.7rem);
     font-weight: 600;
     line-height: 100%;
-    transition: 300ms ease-in-out;
+    transition: 300ms ease;
     transition-property: opacity;
 
     &:hover {
@@ -80,7 +80,7 @@ main {
 }
 
 .top_heading {
-    padding: clamp(11em, 20vh, 15em) clamp(0.8em, 11vw, 9em);
+    padding: clamp(11em, 20vh, 15em) clamp(0.6em, 9vw, 9em);
     font-family: var(--Roboto);
     display: flex;
     align-items: baseline;
@@ -92,7 +92,7 @@ main {
     
     & h1 {
         color: var(--color-white);
-        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
         font-weight: 500;
         line-height: 100%;
         z-index: 2;
@@ -157,7 +157,7 @@ main {
         font-family: var(--Roboto);
         cursor: pointer;
         height: inherit;
-        transition: border-radius 300ms ease-in-out;
+        transition: border-radius 300ms ease;
     }
 }
 
@@ -168,14 +168,14 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: 300ms ease-in-out;
+    transition: 300ms ease;
     transition-property: border-radius, background-color;
     
     .arrow_svg {
         width: 1.3em;
         height: 1.3em;
         transform: rotate(-45deg);
-        transition: 300ms ease-in-out;
+        transition: 300ms ease;
         transition-property: transform, fill;
     }
 }
@@ -221,14 +221,14 @@ main {
             background-color: var(--color-white);
             height: 2.2em;
             width: 2.2em;
-            transition: 300ms ease-in-out;
+            transition: 300ms ease;
             transition-property: background-color;
         }
 
         .arrow_svg {
             fill: var(--color-black);
             width: 1.1em;
-            transition: 300ms ease-in-out;
+            transition: 300ms ease;
             transition-property: fill, transform;
         }
     }
@@ -410,7 +410,7 @@ main {
                 
                 & p {
                     opacity: 0.5;
-                    transition: 300ms ease-in-out;
+                    transition: 300ms ease;
                     transition-property: opacity;  
                 }
 
@@ -436,7 +436,7 @@ main {
                     border: solid var(--color-dark-lighter) 0.005em;
                     height: 2em;
                     width: 2em;
-                    transition: 300ms ease-in-out;
+                    transition: 300ms ease;
                     transition-property: border-radius, background-color, border;                    
                 }
             }
@@ -523,7 +523,7 @@ main {
             font-size: clamp(0.7rem, 1.5vw, 1rem);
             text-decoration: none;
             opacity: 0.8;
-            transition: 200ms ease-in-out;
+            transition: 300ms ease;
             transition-property: opacity;
             margin: 0;
         }
@@ -579,7 +579,7 @@ footer {
     
     .footer_right a {
         opacity: 0.5;
-        transition: 200ms ease-in-out;
+        transition: 300ms ease;
         transition-property: opacity;
 
         &:hover {
@@ -601,3 +601,20 @@ footer {
         }
     }
 }
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .top_heading {
+
+        & h1 {
+            font-size: clamp(1.5rem, 15vw, 3.5rem);;
+        }
+    }
+}
+
+/* 750px */
