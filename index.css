@@ -538,7 +538,7 @@ main {
     }
 
     .location_and_contacts {
-        gap: 2em;
+        gap: 1.5em;
     }
     
     .bottom_infos {
@@ -546,6 +546,7 @@ main {
         align-items: center;
         justify-content: space-evenly;
         gap: 1em;
+        text-decoration: none;
         
         .links_svgs {
             opacity: 0.4;
