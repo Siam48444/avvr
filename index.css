@@ -275,7 +275,7 @@ main {
         
         & p {
             font-family: var(--Roboto);
-            font-size: clamp(0.8rem, 0.8vw, 1.3rem);
+            font-size: clamp(0.9rem, 1vw, 1.3rem);
             font-weight: 400;
             color: var(--color-white-light);
             opacity: 0.8;
