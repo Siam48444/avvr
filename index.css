@@ -533,8 +533,10 @@ main {
             font-weight: 400;
             font-size: clamp(0.7rem, 1.5vw, 1rem);
             text-decoration: none;
+            opacity: 0.8;
             transition: 200ms ease-in-out;
             transition-property: opacity;
+            margin: 0;
         }
 
         & a:hover {
@@ -545,12 +547,18 @@ main {
             opacity: 0.4;
         }
     }
-
+    
     .bottom_infos {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: space-evenly;
-        gap: 0.2em;
+        gap: 1em;
+        
+        .links_svgs {
+            opacity: 0.4;
+            width: 1.2em;
+            fill: var(--color-white);
+        }
     }
 }
 
