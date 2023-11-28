@@ -74,7 +74,7 @@ function TrackCursor(e) {
         CustomCursor.style.display = "none";
     });
 
-    CustomCursor.style.transform = `translate(${e.clientX - w / 2}px, ${e.clientY - h / 2}px)`
+    CustomCursor.style.transform = `translate(${e.pageX - w / 2}px, ${e.pageY - h / 2}px)`
 
 
     
