@@ -293,7 +293,7 @@ main {
     
     .works {
         display: flex;
-        padding: clamp(5em, 20vh, 15em) clamp(3em, 10vw, 15em);
+        padding: clamp(5em, 15vh, 15em) clamp(3em, 10vw, 15em);
         align-items: center;
         justify-content: space-between;
         gap: 3em;;
@@ -600,10 +600,6 @@ footer {
         }
     }
 }
-
-
-
-
 
 
 
