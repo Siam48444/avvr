@@ -629,6 +629,8 @@ footer {
     }
 
     .TAB_work {
+        display: block;
+
         & .works {
             padding: clamp(4em, 8vh, 12em) clamp(3em, 3vw, 8em);
             flex-direction: column;
