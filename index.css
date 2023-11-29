@@ -671,4 +671,14 @@ footer {
     .work_button {
         transform: scale(0.85);
     }
+
+    .home_image {
+        animation: none;
+        background-position: center;
+    }
+
+    .about_us {
+        animation: none;
+        background-position: center;
+    }
 }
