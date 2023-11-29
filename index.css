@@ -359,7 +359,7 @@ main {
     }
     
     .project_svg {
-        width: clamp(8em, 45vw, 60em);
+        width: clamp(10em, 50vw, 60em);
         margin: 0;
         padding: 0;
     }
@@ -514,7 +514,6 @@ main {
     border-radius: 0 0 3vh 3vh;
 
     .links_column {
-        /* border: red 1px solid; */
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -531,7 +530,7 @@ main {
             transition-property: opacity;
             margin: 0;
         }
-
+        
         & a:hover {
             opacity: 0.6;
         }
@@ -540,7 +539,7 @@ main {
             opacity: 0.4;
         }
     }
-
+    
     .location_and_contacts {
         gap: 1.2em;
     }
@@ -571,7 +570,7 @@ footer {
     .CODE {
         transition: 300ms ease;
         transition-property: opacity;
-
+        
         &:hover {
             opacity: 0.6;
         }
@@ -587,10 +586,10 @@ footer {
         transition-property: opacity;
 
         &:hover {
-           opacity: 0.3;
+            opacity: 0.3;
         }
     }
-
+    
     .footer_areas {
         display: flex;
         align-items: center;
@@ -616,7 +615,7 @@ footer {
     .hover_arrow_button {
         transform: scale(0.9);   
     }
-
+    
     .scroll_down_indicator {
         transform-origin: right;
         transform: scale(0.95);
@@ -627,27 +626,18 @@ footer {
     .PC_work {
         display: none;
     }
-
+    
     .TAB_work {
         display: block;
-
+        
         .works {
             flex-direction: column;
-
+            
             &:nth-child(1) {
                 gap: 3em;
             }
-
-            .project_svg {
-                transform: scale(1.1);
-            }
-
-            .work_button {
-                margin-top: 0;
-                margin-inline: auto;
-            }
         }
-
+        
     }
     
     .hover_arrow_button {
@@ -658,7 +648,7 @@ footer {
         transform-origin: right;
         transform: scale(0.9);
     }
-
+    
     .home_image {
         animation: none;
         background-position: center;
