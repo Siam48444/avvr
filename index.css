@@ -158,6 +158,7 @@ main {
         cursor: pointer;
         height: inherit;
         transition: border-radius 300ms ease;
+        font-size: clamp(0.8rem, 1.5vw, 1.1rem);;
     }
 }
 
@@ -613,21 +614,7 @@ footer {
 
 
 @media (max-width: 1000px) {
-    .PC_work {
-        display: none;
-    }
-
-    .TAB_work {
-        display: block;
-
-        & .works {
-            flex-direction: column;
-        }
-
-        & .project_svg {
-            transform: scale(1.1);
-        }
-    }
+    
 
     .hover_arrow_button {
         transform: scale(0.9);   
@@ -637,15 +624,34 @@ footer {
         transform-origin: right;
         transform: scale(0.95);
     }
-
-    .character_box {
-        .character_icon {
-            transform: scale(0.95);
-        }
-    }
 }
 
 @media (max-width: 750px) {
+    .PC_work {
+        display: none;
+    }
+
+    .TAB_work {
+        display: block;
+
+        .works {
+            flex-direction: column;
+
+            &:nth-child(1) {
+                gap: 3em;
+            }
+
+            .project_svg {
+                transform: scale(1.1);
+            }
+
+            .work_button {
+                margin: 0;
+            }
+        }
+
+    }
+    
     .hover_arrow_button {
         transform: scale(0.8);   
     }
