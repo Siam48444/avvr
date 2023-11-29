@@ -193,6 +193,7 @@ main {
     animation-timeline: scroll();
 
     .scroll_down_indicator {
+        text-decoration: none;
         user-select: none;
         border-radius: 999em;
         position: absolute;
@@ -363,7 +364,7 @@ main {
     max-width: 110em;
     margin-inline: auto;
     font-family: var(--Roboto);
-    padding: clamp(5em, 12vh, 13em) clamp(3em, 10vw, 15em);
+    padding: clamp(5em, 12vh, 13em) clamp(2em, 8vw, 15em);
     
     & h1 {
         color: var(--color-white);
@@ -486,7 +487,7 @@ main {
         & p {
             text-align: center;
             font-weight: 400;
-            font-size: clamp(0.7rem, 2.8vw, 1rem);
+            font-size: clamp(0.6rem, 2.5vw, 1rem);
             color: var(--color-white-light);
             line-height: 120%;
             opacity: 0.8;
@@ -608,14 +609,23 @@ footer {
 
 
 @media (max-width: 1000px) {
+    header {
+        max-width: 1000px;
+    }
+
     .top_heading {
         & h1 {
-            font-size: clamp(1.5rem, 15vw, 3.5rem);;
+            font-size: clamp(1.5rem, 20vw, 3.5rem);;
         }
 
         .hover_arrow_button {
             transform: scale(0.9);   
         }
+    }
+
+    .scroll_down_indicator {
+        transform-origin: right;
+        transform: scale(0.95);
     }
 
     .character_box {
