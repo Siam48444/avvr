@@ -295,7 +295,7 @@ main {
     
     .works {
         display: flex;
-        padding: clamp(4em, 10vh, 10em) clamp(1em, 5vw, 10em);
+        padding: clamp(4em, 10vh, 10em) clamp(2em, 10vw, 10em);
         align-items: center;
         justify-content: space-between;
         max-width: 110em;
@@ -359,7 +359,7 @@ main {
     }
     
     .project_svg {
-        width: clamp(10em, 50vw, 60em);
+        width: clamp(15em, 60vw, 60em);
         margin: 0;
         padding: 0;
     }
@@ -382,7 +382,7 @@ main {
         margin-bottom: clamp(2em, 7vh, 6em);
     }
     
-    .epertises_columns {
+    .expertises_columns {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
@@ -632,7 +632,7 @@ footer {
         
         .works {
             flex-direction: column;
-            
+
             &:nth-child(1) {
                 gap: 3em;
             }
@@ -690,8 +690,8 @@ footer {
     }
 }
 
-
-
-/* @media (max-width: 650px) {
-
-} */
+@media (max-width: 600px) {
+    .overview_section {
+        flex-direction: column;
+    }
+}
