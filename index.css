@@ -92,7 +92,7 @@ main {
     
     & h1 {
         color: var(--color-white);
-        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        font-size: clamp(2rem, 8vw, 4.5rem);
         font-weight: 500;
         line-height: 100%;
         z-index: 2;
@@ -626,14 +626,8 @@ footer {
         }
     }
 
-    .top_heading {
-        & h1 {
-            font-size: clamp(1.5rem, 20vw, 3.5rem);;
-        }
-
-        .hover_arrow_button {
-            transform: scale(0.9);   
-        }
+    .hover_arrow_button {
+        transform: scale(0.9);   
     }
 
     .scroll_down_indicator {
@@ -646,30 +640,16 @@ footer {
             transform: scale(0.95);
         }
     }
-
-    .work_button {
-        transform: scale(0.9);
-    }
 }
 
 @media (max-width: 750px) {
-    .top_heading {
-        & h1 {
-            font-size: clamp(1.5rem, 18vw, 3.5rem);;
-        }
-
-        .hover_arrow_button {
-            transform: scale(0.8);   
-        }
+    .hover_arrow_button {
+        transform: scale(0.8);   
     }
-
+        
     .scroll_down_indicator {
         transform-origin: right;
         transform: scale(0.9);
-    }
-
-    .work_button {
-        transform: scale(0.85);
     }
 
     .home_image {
