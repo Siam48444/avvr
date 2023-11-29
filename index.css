@@ -244,7 +244,7 @@ main {
 
 .characteristics {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, auto);
     width: min(80vw, 110em);
     margin-inline: auto;
     gap: 3em;
@@ -614,8 +614,6 @@ footer {
 
 
 @media (max-width: 1000px) {
-    
-
     .hover_arrow_button {
         transform: scale(0.9);   
     }
@@ -666,6 +664,10 @@ footer {
         background-position: center;
     }
 
+    .characteristics {
+        grid-template-columns: repeat(2, auto);
+    }
+
     .about_us {
         animation: none;
         background-position: center;
@@ -678,3 +680,5 @@ footer {
         }
     }
 }
+
+/* 600ox */
