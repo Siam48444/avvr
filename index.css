@@ -247,7 +247,7 @@ main {
     grid-template-columns: repeat(3, auto);
     width: min(80vw, 110em);
     margin-inline: auto;
-    gap: 3em;
+    gap: 2em;
     padding-block: clamp(0.8em, 8vw, 8em);
     
     .character_box {
@@ -667,6 +667,10 @@ footer {
 
     .characteristics {
         grid-template-columns: repeat(2, auto);
+
+        .character_box:last-child {
+            grid-column: 1 / 3;
+        }
     }
 
     .overview_section .arrow_box {
