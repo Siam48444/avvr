@@ -645,6 +645,7 @@ footer {
 
             .work_button {
                 margin-top: 0;
+                margin-inline: auto;
             }
         }
 
