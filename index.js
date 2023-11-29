@@ -4,25 +4,27 @@ function HeaderColorChange() {
     const HeaderElements = document.getElementsByClassName("color_change_elements");
     var HeaderBottom = Header.getBoundingClientRect().bottom;
     
-    const Work = document.querySelector(".works_section");
-    var WorkTop = Work.getBoundingClientRect().top;
-    var WorkBottom = Work.getBoundingClientRect().bottom;
+    const Characteristics = document.querySelector(".characteristics");
+    var CharacteristicsBottom = Characteristics.getBoundingClientRect().bottom;
+
+    const OverviewSection = document.querySelector(".overview_section");
+    var OverviewSectionTop = OverviewSection.getBoundingClientRect().top;
     
-    if(WorkTop < HeaderBottom) {
+    if(CharacteristicsBottom < HeaderBottom) {
         Header.style.backgroundColor = "var(--color-white)";
         for(let i = 0; i < HeaderElements.length; i++) {
             HeaderElements[i].style.color = "var(--color-black)";
         };
-    } if(WorkTop > HeaderBottom) {
+    } if(CharacteristicsBottom > HeaderBottom) {
         Header.style.backgroundColor = "var(--color-green-dark)";
         for(let i = 0; i < HeaderElements.length; i++) {
             HeaderElements[i].style.color = "var(--color-white)";
         };
-    } if(WorkBottom < HeaderBottom) {
+    } if(OverviewSectionTop < HeaderBottom) {
         Header.style.backgroundColor = "var(--color-green-dark)";
         for(let i = 0; i < HeaderElements.length; i++) {
             HeaderElements[i].style.color = "var(--color-white)";
         };
     };
 };
-window.addEventListener("scroll", HeaderColorChange);
+window.addEventListener("scroll", HeaderColorChange)
