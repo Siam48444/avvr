@@ -677,8 +677,12 @@ footer {
         background-position: center;
     }
 
-    .about_us {
+    /* .about_us {
         animation: none;
         background-position: center;
-    }
+
+        .about_us_title {
+            width: min(50vw, 50em);
+        }
+    } */
 }
