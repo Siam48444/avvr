@@ -698,6 +698,19 @@ footer {
         transform: scale(0.6);
     }
 
+    .scroll_down_indicator {
+        transform-origin: right;
+        transform: scale(0.8);
+    }
+
+    .characteristics {
+        grid-template-rows: repeat(3, auto);
+
+        .character_box {
+            grid-column: 1 / 3;
+        }
+    }
+
     .expertises_columns {
         flex-direction: column;
         align-items: center;
