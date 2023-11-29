@@ -126,7 +126,7 @@ main {
 .hover_arrow_button {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     text-decoration: none;
     border-radius: 999em;
     height: 3.5em;
@@ -152,19 +152,19 @@ main {
         border-radius: 999em;
         border: 0;
         outline: 0;
-        font-size: 0.95rem;
         font-weight: 500;
         font-family: var(--Roboto);
-        cursor: pointer;
-        height: inherit;
-        transition: border-radius 300ms ease;
         font-size: clamp(0.8rem, 1.5vw, 1.1rem);;
+        cursor: pointer;
+        color: var(--color-white-light);
+        height: 3.5em;
+        transition: border-radius 300ms ease;
     }
 }
 
 .arrow_box {
     width: 3.5em;
-    height: inherit;
+    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
