@@ -294,7 +294,7 @@ main {
     
     .works {
         display: flex;
-        padding: clamp(5em, 15vh, 15em) clamp(3em, 10vw, 15em);
+        padding: clamp(4em, 12vh, 10em) clamp(2em, 8vw, 10em);
         align-items: center;
         justify-content: space-between;
         gap: 3em;;
@@ -617,7 +617,6 @@ footer {
         display: block;
 
         & .works {
-            padding: clamp(4em, 8vh, 12em) clamp(3em, 3vw, 8em);
             flex-direction: column;
         }
 
