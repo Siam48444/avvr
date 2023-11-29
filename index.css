@@ -297,7 +297,7 @@ main {
         padding: clamp(4em, 12vh, 10em) clamp(2em, 8vw, 10em);
         align-items: center;
         justify-content: space-between;
-        gap: 3em;;
+        gap: 3em;
         max-width: 110em;
         
         &:first-child {
@@ -354,7 +354,7 @@ main {
     }
     
     .project_svg {
-        width: clamp(15em, 55vw, 70em);
+        width: clamp(10em, 50vw, 60em);
         margin: 0;
         padding: 0;
     }
