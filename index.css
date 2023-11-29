@@ -297,11 +297,15 @@ main {
         padding: clamp(4em, 12vh, 10em) clamp(2em, 8vw, 10em);
         align-items: center;
         justify-content: space-between;
-        gap: 3em;
         max-width: 110em;
         
-        &:first-child {
+        &:nth-child(1) {
             border-bottom: solid 0.005em var(--color-dark-lighter);
+            gap: 0;
+        }
+
+        &:nth-child(2) {
+            gap: 3.5em;
         }
         
         .work_title {
@@ -354,7 +358,7 @@ main {
     }
     
     .project_svg {
-        width: clamp(10em, 50vw, 60em);
+        width: clamp(8em, 45vw, 60em);
         margin: 0;
         padding: 0;
     }
