@@ -295,7 +295,7 @@ main {
     
     .works {
         display: flex;
-        padding: clamp(4em, 12vh, 10em) clamp(2em, 8vw, 10em);
+        padding: clamp(4em, 10vh, 10em) clamp(1em, 5vw, 10em);
         align-items: center;
         justify-content: space-between;
         max-width: 110em;
@@ -408,7 +408,7 @@ main {
                 text-decoration: none;
                 color: var(--color-white);
                 font-weight: 400;
-                font-size: clamp(0.7rem, 1.5vw, 1rem);
+                font-size: clamp(0.5rem, 1.5vw, 1rem);
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -500,7 +500,7 @@ main {
 }
 
 @keyframes about_us_parallax {
-    50% {
+    40% {
         background-position-y: bottom;
     }
 }
@@ -676,7 +676,7 @@ footer {
             height: 50%;
             margin-inline: auto;
             transform: translateY(-50%) scale(0.8);
-            inset: 50% 5% 50% auto;
+            inset: 50% 2% 50% auto;
         }
     }
 
@@ -690,4 +690,4 @@ footer {
     }
 }
 
-/* 600ox */
+/* 650ox */
