@@ -51,6 +51,7 @@ header {
 
 .hamburger {
     display: none;
+    position: relative;
 }
 
 .logo {
