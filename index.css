@@ -705,7 +705,6 @@ footer {
 
 @media (max-width: 600px) {
     .menu {
-        display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
@@ -725,11 +724,15 @@ footer {
             background-color: var(--color-white);
             border-radius: 2vh;
             padding: clamp(1em, 6vw, 2em);
+
+            .page_active {
+                color: var(--color-red-primary);
+            }
             
             & a {
                 text-decoration: none;
                 color: var(--color-black);
-                font-weight: 500;
+                font-weight: 400;
                 font-size: clamp(1rem, 4vw, 2rem);
             }
         }
