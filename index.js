@@ -40,5 +40,8 @@ Hamburger.addEventListener("click", ()=> {
     Menu.style.display = "flex";
 });
 
+Menu.addEventListener("click", ()=> {
+    Menu.style.display = "none";
+});
 
 // console.log(Menu);
