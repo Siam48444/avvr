@@ -86,13 +86,13 @@ main {
     align-items: baseline;
     justify-content: space-between;
     flex-direction: column;
-    gap: 3em;
+    gap: clamp(2em, 3vw, 3.5em);
     margin-inline: auto;
     width: min(100vw, 110em);
     
     & h1 {
         color: var(--color-white);
-        font-size: clamp(2rem, 8vw, 4.5rem);
+        font-size: clamp(1rem, 8vw, 4.5rem);
         font-weight: 500;
         line-height: 100%;
         z-index: 2;
@@ -102,7 +102,7 @@ main {
         color: var(--color-white-light);
         line-height: 100%;
         font-weight: 400;
-        font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+        font-size: clamp(0.7rem, 1.5vw, 1.5rem);
         z-index: 2;
     }
 }
@@ -676,7 +676,7 @@ footer {
 
         .about_us_title {
             width: min(70vw, 50em);
-            height: 50%;
+            height: 60%;
             margin-inline: auto;
             transform: translateY(-50%) scale(0.8);
             inset: 50% 2% 50% auto;
@@ -728,5 +728,10 @@ footer {
                 font-size: clamp(0.8rem, 1vw, 2rem);
             }
         }
+    }
+
+    footer {
+        flex-direction: column;
+        gap: clamp(1em, 2vw, 2em);
     }
 }
