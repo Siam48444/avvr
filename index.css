@@ -54,6 +54,11 @@ header {
     position: relative;
 }
 
+.menu {
+    display: none;
+    position: absolute;
+}
+
 .logo {
     color: var(--color-white);
     font-family: var(--Inter);
@@ -699,6 +704,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .menu {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: var(--color-white-lighter);
+        z-index: 99999;
+    }
+
     header {
         .navigation a{
             display: none;
