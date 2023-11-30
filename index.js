@@ -28,3 +28,17 @@ function HeaderColorChange() {
     };
 };
 window.addEventListener("scroll", HeaderColorChange)
+
+
+
+
+// Hamburger menu.
+const Hamburger = document.querySelector(".hamburger");
+const Menu = document.querySelector(".menu");
+
+Hamburger.addEventListener("click", ()=> {
+    Menu.style.display = "flex";
+});
+
+
+// console.log(Menu);
