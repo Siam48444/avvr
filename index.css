@@ -694,6 +694,16 @@ footer {
 }
 
 @media (max-width: 600px) {
+    header {
+        .navigation a{
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+
     .hover_arrow_button {
         transform: scale(0.6);
     }
