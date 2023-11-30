@@ -20,6 +20,7 @@ body {
     --color-red-primary: rgba(227, 66, 72, 1);
     --color-white: rgba(245,242,239, 1);
     --color-white-light: rgba(245,242,239, 0.8);
+    --color-white-lighter: rgba(255,255,255, 0.05);
     --color-black: rgba(3, 19, 15, 0.9);
     --color-black-light: rgba(67, 77, 72, 1);
     --color-dark-light: rgba(143, 140, 121, 1);
