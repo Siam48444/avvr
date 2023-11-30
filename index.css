@@ -706,10 +706,14 @@ footer {
 @media (max-width: 600px) {
     .menu {
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100%;
         width: 100%;
         background-color: var(--color-white-lighter);
         z-index: 99999;
+        backdrop-filter: blur(2px);
+        position: fixed;
     }
 
     header {
