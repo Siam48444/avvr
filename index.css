@@ -735,3 +735,15 @@ footer {
         gap: clamp(1em, 2vw, 2em);
     }
 }
+
+@media (max-width: 400px) {
+    .expertises_columns {
+        .arrow_box {
+            transform: scale(0.9);
+        }
+    }
+
+    .bottom_links {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
