@@ -714,6 +714,25 @@ footer {
         z-index: 99999;
         backdrop-filter: blur(2px);
         position: fixed;
+        font-family: var(--Inter);
+
+        .menu_box {
+            display: flex;
+            align-items: baseline;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: clamp(0.2em, 2vw, 1em);
+            background-color: var(--color-white);
+            border-radius: 2vh;
+            padding: clamp(1em, 6vw, 2em);
+            
+            & a {
+                text-decoration: none;
+                color: var(--color-black);
+                font-weight: 500;
+                font-size: clamp(1rem, 4vw, 2rem);
+            }
+        }
     }
 
     header {
